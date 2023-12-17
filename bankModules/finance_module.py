@@ -1,3 +1,15 @@
+from colorama import Fore, Style
+
+class TextColors:
+    RESET = '\033[0m'
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    PURPLE = '\033[95m'
+    CYAN = '\033[96m'
+    WHITE = '\033[97m'
+
 class Finance:
     def _init_(self):
         pass
@@ -10,7 +22,7 @@ class Finance:
         # future_value = ((principal_amount * interest_rate * investment_time) / 100) + principal_amount
         future_value = principal_amount*(1+((interest_rate/100)*investment_time))
 
-        print(f"The future value of the investment is: ${future_value}")
+        print("The future value of the investment is: "+TextColors.YELLOW+f"${future_value}"+TextColors.RESET)
 
     def loan_approval(self):
         credit_score = int(input("Enter your credit score: "))

@@ -78,6 +78,7 @@ class GoldLoanManagementSystem:
             if loan.customer_name == customer_name:
                 loan.make_payment(payment)
                 print(f"${payment} paid back")
+                self.loans.remove(loan)
                 return
         print("Customer not found or no active loan for the customer.")
 

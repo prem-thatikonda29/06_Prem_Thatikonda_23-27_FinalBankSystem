@@ -111,7 +111,7 @@ def main():
                 elif atm_choice == 2:
                     bank_customer.change_pin()
                 elif atm_choice == 3:
-                    print(TextColors.GREEN+"Account..."+TextColors.RESET)
+                    print(TextColors.GREEN+"Entering ATM account..."+TextColors.RESET)
                     sleep(0.8)
                     while True:
                         print("1. Check Balance")
